@@ -1,44 +1,134 @@
-This directory contains a collection of programs to demonstrate
-the features of the Tk toolkit.  The programs are all scripts for
-"wish", a windowing shell.  If wish has been installed on your path
-then you can invoke any of the programs in this directory just
-by typing its file name to your command shell under Unix.  Otherwise
-invoke wish with the file as its first argument, e.g., "wish hello".
-The rest of this file contains a brief description of each program.
-Files with names ending in ".tcl" are procedure packages used by one
-or more of the demo programs;  they can't be used as programs by
-themselves so they aren't described below.
 
-hello -		Creates a single button;  if you click on it, a message
-		is typed and the application terminates.
+		# Matrix Operations Tool using Python & NumPy
 
-widget -	Contains a collection of demonstrations of the widgets
-		currently available in the Tk library.  Most of the .tcl
-		files are scripts for individual demos available through
-		the "widget" program.
+## 📌 Project Overview
 
-ixset -		A simple Tk-based wrapper for the "xset" program, which
-		allows you to interactively query and set various X options
-		such as mouse acceleration and bell volume.  Thanks to
-		Pierre David for contributing this example.
+The **Matrix Operations Tool** is a Python application that performs common matrix operations using the **NumPy** library. It provides an interactive menu-driven interface where users can input two matrices and perform various mathematical operations.
 
-rolodex -	A mock-up of a simple rolodex application.  It has much of
-		the user interface for such an application but no back-end
-		database.  This program was written in response to Tom
-		LaStrange's toolkit benchmark challenge.
+This project demonstrates the use of NumPy for efficient matrix manipulation and basic linear algebra operations.
 
-tcolor -	A color editor.  Allows you to edit colors in several
-		different ways, and will also perform automatic updates
-		using "send".
+---
 
-rmt -		Allows you to "hook-up" remotely to any Tk application
-		on the display.  Select an application with the menu,
-		then just type commands:  they'll go to that application.
+## ✨ Features
 
-timer -		Displays a seconds timer with start and stop buttons.
-		Control-c and control-q cause it to exit.
+* Matrix Addition
+* Matrix Subtraction
+* Matrix Multiplication
+* Transpose of Matrix A
+* Transpose of Matrix B
+* Determinant of Matrix A
+* Determinant of Matrix B
+* Interactive Menu-Driven Interface
+* Input Validation for Matrix Operations
 
-browse -	A simple directory browser.  Invoke it with and argument
-		giving the name of the directory you'd like to browse.
-		Double-click on files or subdirectories to browse them.
-		Control-c and control-q cause the program to exit.
+---
+
+## 🛠️ Technologies Used
+
+* Python 3
+* NumPy
+
+---
+
+## 📂 Project Structure
+
+```text
+Matrix-Operations-Tool/
+│
+├── matrix_operations.py
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## ▶️ How to Run
+
+### 1. Install NumPy
+
+```bash
+pip install numpy
+```
+
+### 2. Run the Program
+
+```bash
+python matrix_operations.py
+```
+
+### 3. Enter Matrix Details
+
+* Number of rows
+* Number of columns
+* Elements of Matrix A
+* Elements of Matrix B
+
+### 4. Select an Operation
+
+The application displays the following menu:
+
+1. Matrix Addition
+2. Matrix Subtraction
+3. Matrix Multiplication
+4. Transpose of Matrix A
+5. Transpose of Matrix B
+6. Determinant of Matrix A
+7. Determinant of Matrix B
+8. Exit
+
+---
+
+## 📷 Sample Output
+
+```text
+========== MATRIX OPERATIONS ==========
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Transpose of Matrix A
+5. Transpose of Matrix B
+6. Determinant of Matrix A
+7. Determinant of Matrix B
+8. Exit
+
+Enter your choice: 1
+
+Addition Result:
+[[ 6  8]
+ [10 12]]
+```
+
+---
+
+## 📚 Concepts Used
+
+* NumPy Arrays
+* Matrix Arithmetic
+* Matrix Transpose
+* Matrix Determinant
+* Conditional Statements
+* Loops
+* User Input Handling
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I learned:
+
+* How to use the NumPy library for matrix operations.
+* How to build a menu-driven Python application.
+* How to perform basic linear algebra calculations.
+* How to validate matrix dimensions before performing operations.
+* How to write clean, structured, and interactive Python programs.
+
+
+## 🚀 Future Improvements
+
+* Support matrices of different sizes where applicable.
+* Add matrix inverse calculation.
+* Add eigenvalue and eigenvector computation.
+* Develop a graphical user interface (GUI) using Tkinter.
+* Export results to a text file.
+
+Python Development Internship Project
